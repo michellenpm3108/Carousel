@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel {
+    max-width: 800px;
+    position: relative;
+}
+.carousel-item {
+    display: none;
+}
+.carousel-item-visible {
+    display: block;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-actions{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-btn {
+    border: none;
+    background: black;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    margin: 0 1em;
+}
+.round {
+    width: .8em;
+    height: .8em;
+    background-color: white;
+    border-radius: 50%;
+}
+
