@@ -36,6 +36,7 @@ img {
     place-items: center;
     padding: 0;
     margin: 0 1em;
+    cursor: pointer;
 }
 .round {
     width: .8em;
