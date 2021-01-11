@@ -6,9 +6,8 @@ document.getElementById('carousel-btn-prev').addEventListener('click', moveToPre
 document.getElementById('carousel-btn-next').addEventListener('click', moveToNextSlide)
 
 function hideAllSlides() {
-    for (let i = 0; i < slides.length ; i++) {
-        slides[i].classList.remove('carousel-item-visible');
-        slides[i].classList.add('carousel-item-hidden');
+    for (let slide of slides) {
+        slide.classList.remove('carousel-item-visible'); 
     }
 }
 
@@ -25,7 +24,15 @@ function moveToNextSlide(){
 }
 
 function moveToPrevSlide(){
+    hideAllSlides();
 
+    if (slidePosition === 0) {
+      slidePosition = totalSlides - 1;
+    } else {
+        slidePosition --;
+    }
+    
+    slides[slidePosition].classList.add('carousel-item-visible');
 
 }
 

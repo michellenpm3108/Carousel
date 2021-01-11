@@ -8,11 +8,10 @@ body {
 .carousel-item {
     display: none;
 }
-.carousel-item-hidden {
-    display: none;
-}
  .carousel-item-visible {
     display: block;
+    animation: fadeVisibility 1s;
+
 }
 
 .carousel-item img {
@@ -21,7 +20,6 @@ body {
     max-width: 800px;
 
 }
-
 
 
 .carousel-actions{
@@ -54,3 +52,11 @@ body {
 }
 
 
+@keyframes fadeVisibility {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
