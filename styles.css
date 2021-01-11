@@ -1,8 +1,6 @@
 body {
-    padding: 0;
     margin: 0;
 }
-
 .carousel {
     max-width: 800px;
     position: relative;
@@ -10,30 +8,36 @@ body {
 .carousel-item {
     display: none;
 }
-.carousel-item-visible {
-    display: block;
-}
 .carousel-item-hidden {
     display: none;
 }
-img {
-    width: 100%;
-    object-fit: cover;
+ .carousel-item-visible {
+    display: block;
 }
 
+.carousel-item img {
+    width: 100%;
+    height: 40vh;
+    max-width: 800px;
+
+}
+
+
+
 .carousel-actions{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
 }
 
 .carousel-btn {
-    border: none;
+    border: 0;
     background: black;
-    border-radius: 50%;
+    border-radius: 50px;
     width: 2em;
     height: 2em;
     display: grid;
@@ -48,4 +52,5 @@ img {
     background-color: white;
     border-radius: 50%;
 }
+
 
