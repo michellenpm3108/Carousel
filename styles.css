@@ -7,11 +7,11 @@ body {
 }
 .carousel-item {
     display: none;
+
 }
  .carousel-item-visible {
     display: block;
     animation: fadeVisibility 1s;
-
 }
 
 .carousel-item img {
