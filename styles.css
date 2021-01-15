@@ -9,7 +9,7 @@ body {
     display: none;
 
 }
- .carousel-item-visible {
+.carousel-item-visible {
     display: block;
     animation: fadeVisibility 1s;
 }
@@ -17,6 +17,7 @@ body {
 .carousel-item img {
     width: 100%;
     height: 40vh;
+    object-fit: cover;
     max-width: 800px;
 
 }

@@ -7,21 +7,21 @@ document.getElementById('carousel-btn-next').addEventListener('click', moveToNex
 
 function hideAllSlides() {
     for (let slide of slides) {
-        slide.classList.remove('carousel-item-visible'); 
+        slide.classList.remove('carousel-item-visible')
+        slide.classList.add('carousel-item')
     }
 }
 
 function moveToNextSlide(){
-    hideAllSlides();
-
+    hideAllSlides()
     if (slidePosition === totalSlides - 1) {
-      slidePosition = 0;
+        slidePosition = 0;
     } else {
         slidePosition ++;
     }
-    
-    slides[slidePosition].classList.add('carousel-item-visible');
+    slides[slidePosition].classList.add('carousel-item-visible')
 }
+
 
 function moveToPrevSlide(){
     hideAllSlides();
